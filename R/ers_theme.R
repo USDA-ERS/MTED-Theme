@@ -1,10 +1,8 @@
 #' ERS Theme
-#'
-#' @examples
-#' ggplot::ggplot() + ers_theme()
+#' Theme that can be added to ggplot
 
 ers_theme = function() {
-  ggplo2::theme(
+  ggplot2::theme(
     line                  = ggplot2::element_line(
       colour = "black",
       size = 0.5,
@@ -27,7 +25,7 @@ ers_theme = function() {
       vjust = 0.5,
       angle = 0,
       lineheight = 0.9,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 0,
@@ -37,7 +35,7 @@ ers_theme = function() {
     ),
     axis.title.x          = ggplot2::element_text(
       vjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 2.75,
         r = 0,
         b = 0,
@@ -47,7 +45,7 @@ ers_theme = function() {
     ),
     axis.title.x.top      = ggplot2::element_text(
       vjust = 0,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 2.75,
@@ -58,7 +56,7 @@ ers_theme = function() {
     axis.title.y          = ggplot2::element_blank(),
     axis.text.x           = ggplot2::element_text(
       vjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 2.2,
         r = 0,
         b = 0,
@@ -68,7 +66,7 @@ ers_theme = function() {
     ),
     axis.text.x.top       = ggplot2::element_text(
       vjust = 0,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 2.2,
@@ -78,7 +76,7 @@ ers_theme = function() {
     ),
     axis.text.y           = ggplot2::element_text(
       hjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 2.2,
         b = 0,
@@ -88,7 +86,7 @@ ers_theme = function() {
     ),
     axis.text.y.right     = ggplot2::element_text(
       hjust = 0,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 0,
@@ -120,20 +118,20 @@ ers_theme = function() {
       unit = "cm"
     ),
     legend.box.background = ggplot2::element_blank(),
-    legend.box.spacing    = ggplo2::unit(11, units = "pt"),
+    legend.box.spacing    = ggplot2::unit(11, units = "pt"),
     panel.background      = NULL,
     panel.border          = ggplot2::element_blank(),
     panel.spacing         = ggplot2::unit(5.5, units = "pt"),
     panel.grid.major.x    = ggplot2::element_blank(),
     panel.grid.minor.x    = ggplot2::element_blank(),
-    panel.grid.major.y    = ggplo2::element_line(colour = "grey92"),
-    panel.grid.minor.y    = ggplo2::element_line(size = ggplot2::rel(0.5)),
-    plot.title            = ggplo2::element_text(
+    panel.grid.major.y    = ggplot2::element_line(colour = "grey92"),
+    panel.grid.minor.y    = ggplot2::element_line(size = ggplot2::rel(0.5)),
+    plot.title            = ggplot2::element_text(
       face = "bold",
       size = 10.5,
       hjust = 0,
       vjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 5.5,
         r = 0,
         b = 5.5,
@@ -142,10 +140,10 @@ ers_theme = function() {
       )
     ),
     plot.title.position   = "plot",
-    plot.subtitle         = ggplo2::element_text(
+    plot.subtitle         = ggplot2::element_text(
       hjust = 0,
       vjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 5,
@@ -153,11 +151,11 @@ ers_theme = function() {
         unit = "pt"
       )
     ),
-    plot.caption          = ggplo2::element_text(
+    plot.caption          = ggplot2::element_text(
       size = 8,
       hjust = 0,
       vjust = 1,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 5.5,
         r = 0,
         b = 0,
@@ -166,11 +164,11 @@ ers_theme = function() {
       )
     ),
     plot.caption.position = "plot",
-    plot.tag              = ggplo2::element_text(
+    plot.tag              = ggplot2::element_text(
       size = 8,
       hjust = 0,
       vjust = 0.5,
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 0,
         r = 0,
         b = 10,
@@ -186,12 +184,12 @@ ers_theme = function() {
       l = 5.5,
       unit = "pt"
     ),
-    strip.background      = ggplo2::element_rect(fill = "grey85", colour = "grey20"),
+    strip.background      = ggplot2::element_rect(fill = "grey85", colour = "grey20"),
     strip.placement       = "inside",
     strip.text            = ggplot2::element_text(
       colour = "grey10",
       size = ggplot2::rel(0.8),
-      margin = ggplo2::margin(
+      margin = ggplot2::margin(
         t = 4.4,
         r = 4.4,
         b = 4.4,
