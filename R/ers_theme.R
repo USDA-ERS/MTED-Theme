@@ -1,5 +1,8 @@
 #' ERS Theme
-#' Theme that can be added to ggplot
+#'
+#' @examples
+#' ggplot2::ggplot() + ERSTheme::ers_theme()
+#' @export
 
 ers_theme = function() {
   ggplot2::theme(

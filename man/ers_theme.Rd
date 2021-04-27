@@ -2,12 +2,13 @@
 % Please edit documentation in R/ers_theme.R
 \name{ers_theme}
 \alias{ers_theme}
-\title{ERS Theme
-Theme that can be added to ggplot}
+\title{ERS Theme}
 \usage{
 ers_theme()
 }
 \description{
 ERS Theme
-Theme that can be added to ggplot
+}
+\examples{
+ggplot2::ggplot() + ERSTheme::ers_theme()
 }
