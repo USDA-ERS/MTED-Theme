@@ -1,0 +1,13 @@
+Package: ERSTheme
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Author: Steven Ramsey (USDA/ERS/MTED)
+Maintainer: The package maintainer <steven.ramsey2@usda.gov>
+Description: ERS Theme for ggplo2 which can be used to turn ggplot graphics into properly ERS themed graphics.
+License: CCA4
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2
+RoxygenNote: 7.1.1
